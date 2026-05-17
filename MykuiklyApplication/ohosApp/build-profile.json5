@@ -1,0 +1,66 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/qitmac001467/.ohos/config/default_ohosApp_0ETkaAdwFnKFKVptBBr227c6owhO9_lfkuOz_uoFpuM=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A5CD667AC167F98AD56F339D6958BD8C625B492C8FEE0BE8DB842343D0463F24D254FA3A29A1E",
+          "profile": "/Users/qitmac001467/.ohos/config/default_ohosApp_0ETkaAdwFnKFKVptBBr227c6owhO9_lfkuOz_uoFpuM=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/qitmac001467/.ohos/config/default_ohosApp_0ETkaAdwFnKFKVptBBr227c6owhO9_lfkuOz_uoFpuM=.p12",
+          "storePassword": "0000001AA55081409271680F17328AC70BEE5C49E237A8C60D71FAF3E2B76A36A79571C369BD40265FBF"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "core_render_ohos",
+      "srcPath": "./core-render-ohos",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default",
+          ]
+        }
+      ]
+    }
+  ]
+}
